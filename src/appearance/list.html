@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录列表</title>
+    <link rel="stylesheet" href="list.css">
+    <script>
+        function addinfo() {
+            window.location.href="add.html";
+        }
+        function changeinfo() {
+
+        }
+        function delinfo() {
+
+        }
+    </script>
+</head>
+<body>
+<h3>通讯录</h3>
+<div class="container">
+
+    <table id="list">
+        <tr>
+            <th></th>
+            <th>编号：</th>
+            <th>姓名：</th>
+            <th>电话：</th>
+            <th>邮箱：</th>
+            <th>住址：</th>
+            <th>QQ：</th>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox"></label></td>
+            <td>1</td>
+            <td>wlf</td>
+            <td>18813082756</td>
+            <td>1651234118@qq.com</td>
+            <td>xtc</td>
+            <td>1651234118</td>
+        </tr>
+    </table>
+    <input type="button" id="change" value="编辑联系人" onclick="changeinfo()">
+    <input type="button" id="del" value="删除联系人" onclick="delinfo()">
+    <input type="button" id="add" value="添加联系人" onclick="addinfo()">
+
+</div>
+</body>
+</html>

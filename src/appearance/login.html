@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function log() {
+            const user = document.getElementById("user").value;
+            const password = document.getElementById("password").value;
+            //查询数据，确认登录是否成功
+            if(user === "root" && password === "root")//测试用户
+                window.location.href="list.html";
+            else
+                alert("仅支持测试用户登录");
+        }
+        function sign() {
+            window.location.href="sign.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>通讯录登录系统</h2>
+        <h5>测试用例：root-root</h5>
+        <form>
+            <div class="inputBOX">
+                <label>
+                    <input id="user" type="text" placeholder="用户名">
+                </label>
+            </div>
+            <div class="inputBOX">
+                <label>
+                    <input id="password" type="password" placeholder="密码">
+                </label>
+            </div>
+            <input type="button" id="login" value="登录" onclick="log()">
+            <input type="button" id="signup" value="注册" onclick="sign()">
+        </form>
+    </div>
+</body>
+</html>

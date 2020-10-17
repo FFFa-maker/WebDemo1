@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function signup() {
+            //查询数据确认是否注册成功
+            alert("注册成功");
+        }
+
+        function back() {
+            window.location.href="login.html";
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h2>通讯录注册系统</h2>
+    <form>
+        <div class="inputBOX">
+            <label>
+                <input id="user" type="text" placeholder="用户名">
+            </label>
+        </div>
+        <div class="inputBOX">
+            <label>
+                <input id="password" type="text" placeholder="密码">
+            </label>
+        </div>
+        <input type="button" id="sign" value="注册" onclick="signup()">
+        <input type="button" id="goback" value="返回" onclick="back()">
+    </form>
+</div>
+</body>
+</html>
